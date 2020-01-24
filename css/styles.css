@@ -1,0 +1,13 @@
+img{
+    max-width: 170px;
+    max-height: 170px;
+}
+
+#islas-map{
+    max-width: 1070px;
+    max-height: 1070px;
+}
+
+.ui-dialog-titlebar-close {
+    visibility: hidden;
+}

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title>jQuery Canarias</title>
+
+	<!-- BootStrap -->
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+		integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+	<!-- JQuery -->
+	<link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+	<link href="http://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/css/toastr.min.css" media="screen" rel="stylesheet" type="text/css" />
+	
+
+	<!-- Propio -->
+	<link rel="stylesheet" href="./css/styles.css">
+
+	
+
+</head>
+
+<body class="alert-info">
+
+	<!-- Ventana de Juego -->
+	<div id="mainGame" class="container-fluid mt-4">
+
+		<!-- Difficultad -->
+		<div class="d-flex justify-content-center mb-4">
+
+			<div class="form-inline col-auto">
+				<label for="inputState" class="mr-2">Dificultad</label>
+				<select id="inputState" class="form-control" onchange="changeGameStatus()">
+					<option selected>Selecciona</option>
+					<option>Fácil</option>
+					<option>Medio</option>
+					<option>Difícil</option>
+				</select>
+			</div>
+
+		</div>
+
+		<div id="preset" class="text-center">
+		</div>
+
+		<div id="islas" class="text-center">
+		</div>
+
+		<div id="imagenes" class="text-center mt-2">
+		</div>
+		
+		<p class="fixed-bottom d-flex justify-content-end"><span class="badge badge-warning ">© Pablo Delgado Avila</span> </p>
+
+		<div id="dialog" title="Resultado">
+		</div>
+
+	</div>
+	
+
+	<!-- JQuery -->
+	<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+	<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+
+	<!-- BootStrap -->
+	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+		integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+		crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+		integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+		crossorigin="anonymous"></script>
+		
+	<script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/js/toastr.min.js"></script>
+
+	<!-- Propio -->
+	<script src="./js/functions.js"></script>
+
+</body>
+
+</html>
